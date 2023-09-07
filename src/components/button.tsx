@@ -23,17 +23,17 @@ const Container = styled.a<{ secondary?: boolean }>`
 `;
 
 interface ButtonProps {
-    href: string;
+    href?: string;
     children: ReactNode;
     secondary?: boolean;
 }
 const Button: FunctionComponent<ButtonProps> = ({ href, children, secondary }) => {
     return (
-        <Link href={href} legacyBehavior passHref>
+        <button>
             <Container target="_blank" secondary={secondary}>
                 {children}
             </Container>
-        </Link>
+        </button>
     );
 };
 

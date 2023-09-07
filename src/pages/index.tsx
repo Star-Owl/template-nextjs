@@ -99,13 +99,8 @@ const HomePage: FunctionComponent<HomePageProps> = ({}) => {
                 </h2>
 
                 <Actions>
-                    <Button
-                        href="https://github.com/new?owner=NordcomInc&template_name=nextjs-starter&template_owner=NordcomInc"
-                        secondary
-                    >
-                        Get Started
-                    </Button>
-                    <Button href="https://github.com/NordcomInc/nextjs-starter">Learn More</Button>
+                    <Button secondary>Get Started</Button>
+                    <Button>Learn More</Button>
                 </Actions>
             </Display>
         </Container>
